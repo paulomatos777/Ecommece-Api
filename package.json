@@ -1,0 +1,31 @@
+{
+  "name": "ecommerce-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src /index.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulomatos777/Ecommerce-Api.git"
+  },
+  "keywords": [],
+  "author": "Paulo Matos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulomatos777/Ecommerce-Api/issues"
+  },
+  "homepage": "https://github.com/paulomatos777/Ecommerce-Api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
