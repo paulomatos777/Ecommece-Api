@@ -1,15 +1,15 @@
 const { Router } = require("express");
 const { route } = require("express/lib/application");
+const UserController = require("../controllers/UserController");
 
 const routes = Router();
-
 routes.get("/", (req, res) => {
   res.send("Ola mundo");
 });
 
-routes.post("/users");
-routes.get("/users");
-routes.get("/users/:user_id");
+routes.post("/users", UserController.createUser);
+routes.get("/users", UserController.getUsers);
+routes.get("/users/:user_id", UserController.getUserById);
 
 routes.post("/login");
 
