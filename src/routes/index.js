@@ -1,6 +1,7 @@
 const { Router } = require("express");
 const { route } = require("express/lib/application");
 const UserController = require("../controllers/UserController");
+const LoginController = require("../controllers/LoginController");
 
 const routes = Router();
 routes.get("/", (req, res) => {
@@ -11,7 +12,7 @@ routes.post("/users", UserController.createUser);
 routes.get("/users", UserController.getUsers);
 routes.get("/users/:user_id", UserController.getUserById);
 
-routes.post("/login");
+routes.post("/login", LoginController.createSession);
 
 routes.post("/products/:user_id");
 routes.get("/products/:user_id");
